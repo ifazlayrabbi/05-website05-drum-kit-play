@@ -39,6 +39,8 @@ for(var i=0; i<drumNumbers; i++)
 document.addEventListener('keydown', function(event){
     playSound(event.key)
 })
+
+
 function playSound(letter){
 
     // let sound = new Audio('sounds/tom-1.mp3')
