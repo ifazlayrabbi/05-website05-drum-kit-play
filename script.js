@@ -31,13 +31,19 @@ for(var i=0; i<drumNumbers; i++)
         // console.log (seeEvent)
         var letter
         console.log(letter = this.innerHTML)
-        playSound(letter)     
+        playSound(letter)
+
+        
+        buttonAnimation(letter)    
     })
 
 
 // playing sound for typing from keyboard
 document.addEventListener('keydown', function(event){
     playSound(event.key)
+
+
+    buttonAnimation(event.key)
 })
 
 
@@ -94,6 +100,17 @@ function playSound(letter){
             
     }    
 }   
+
+
+function buttonAnimation(letter){
+    // for(var j=0; j<drumNumbers; j++)
+    //     document.getElementsByClassName('drum')[j].classList.remove('pressed')
+
+    let element = document.getElementsByClassName(letter)[0]
+    element.classList.add('pressed')
+    setTimeout(function(){element.classList.remove('pressed')}, 100)
+}
+
 
 
 
