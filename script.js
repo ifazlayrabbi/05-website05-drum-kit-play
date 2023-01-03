@@ -28,7 +28,7 @@ let drumNumbers = document.getElementsByClassName('drum').length
 
 for(var i=0; i<drumNumbers; i++)
     document.getElementsByClassName('drum')[i].addEventListener('click', function(){
-        // console.log (seeEvent)
+        // console.log (this)
         var letter
         console.log(letter = this.innerHTML)
         playSound(letter)
@@ -51,6 +51,7 @@ function playSound(letter){
 
     // let sound = new Audio('sounds/tom-1.mp3')
     // sound.play()
+
     // console.log(this)
     // console.log(this.innerHTML)
     // this.classList.add('white')
