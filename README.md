@@ -1,4 +1,5 @@
 # site5-drum-kit-play
-This website is built with javascript.
+Website: https://ifazlayrabbi.github.io/site5-drum-kit-play/
 
-Playing drum-kit using keyboard or click.
+- This website is built with javascript.
+- Playing drum-kit using keyboard or click.
